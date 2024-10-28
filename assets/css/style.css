@@ -73,6 +73,18 @@ h1 {
     /* Visual cue (Underline) on nav links-*/
     border-bottom: 2px solid #ec0505; /*width/style/color*/
 }
+/* Navbar Styles with dropdown toggle*/
+
+nav {
+    position: absolute; /* Positioned relative to the nearest positioned ancestor*/
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none; /* default Hidden until user clicked on*/
+
+}
 
 /* Main content*/
 main {
