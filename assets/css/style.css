@@ -39,8 +39,17 @@ header {
 
 }
 
+header a { /*Any a tag that is descendant of header */
+    text-decoration: none;
+    color: inherit;
+
+}
+
 h1 {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif; /*Styling the Logo*/
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+    color: #252525;
 
 }
 
