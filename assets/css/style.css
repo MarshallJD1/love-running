@@ -2,24 +2,37 @@
 /* Asterisk Wildcard selector "*" - to override default styles added by the browser */
 
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box; /*so that later setting the height or width to an
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*so that later setting the height or width to an
 element, it will be applied to the entire element, including the border.*/
 }
 
-
+/*General Styles*/
+body {
+    min-height: 100vh; /* Allows to stretch if the content is large enough to cause scroll*/
+    display: flex;
+    flex-direction: column; /* Elements show underneath eachother*/
+    /* General project styles */
+    color: #3a3a3a;
+}
 
 /* Header */
 header {
     background-color: blueviolet;
 
 }
+
 /* Main content*/
 main {
     background-color: aqua;
+    /* main element to take up any surplus space to push footer down.*/
+    flex: 1 0 auto;
 }
+
 /* Footer*/
 footer {
     background-color: red;
+    
 }
