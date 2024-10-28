@@ -36,6 +36,9 @@ header {
     /* 1st- Horizontol offeset -*/
     /* = Left, 2nd Vertical offset - = Shading Above */
     /* 3rd intensity and 4th color */
+    display: flex; 
+    justify-content: space-between;
+    align-items: baseline; 
 
 }
 
@@ -43,6 +46,7 @@ header a {
     /*Any a tag that is descendant of header */
     text-decoration: none;
     color: inherit;
+  
 
 }
 
@@ -83,7 +87,21 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none; /* default Hidden until user clicked on*/
+    top: 100%;
+    
 
+}
+/* Nav Toggle*/
+#nav-toggle:checked~nav {
+    display:block;
+}
+
+#nav-toggle {
+    display: none; /*Hides the checkbox*/
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 /* Main content*/
@@ -91,6 +109,7 @@ main {
     background-color: aqua;
     /* main element to take up any surplus space to push footer down.*/
     flex: 1 0 auto;
+    margin-top:  47px;
 }
 
 /* Footer*/
