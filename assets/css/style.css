@@ -11,9 +11,11 @@ element, it will be applied to the entire element, including the border.*/
 
 /*General Styles*/
 body {
-    min-height: 100vh; /* Allows to stretch if the content is large enough to cause scroll*/
+    min-height: 100vh;
+    /* Allows to stretch if the content is large enough to cause scroll*/
     display: flex;
-    flex-direction: column; /* Elements show underneath eachother*/
+    flex-direction: column;
+    /* Elements show underneath eachother*/
     /* General project styles */
     color: #3a3a3a;
     font-family: 'lato', sans-serif;
@@ -21,7 +23,19 @@ body {
 
 /* Header */
 header {
-    background-color: blueviolet;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    /* Stops the text sticking to the sides*/
+    position: fixed;
+    /*So The Nav bar Scroll Along*/
+    z-index: 99;
+    /* Keeps the Nav Bar ontop of everything*/
+    width: 100%;
+    /**/
+    box-shadow: 0 2px 2px #3a3a3a;
+    /* 1st- Horizontol offeset -*/
+    /* = Left, 2nd Vertical offset - = Shading Above */
+    /* 3rd intensity and 4th color */
 
 }
 
@@ -40,5 +54,5 @@ main {
 /* Footer*/
 footer {
     background-color: red;
-    
+
 }
