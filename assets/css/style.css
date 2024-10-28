@@ -39,18 +39,39 @@ header {
 
 }
 
-header a { /*Any a tag that is descendant of header */
+header a {
+    /*Any a tag that is descendant of header */
     text-decoration: none;
     color: inherit;
 
 }
 
 h1 {
-    font-family: 'Oswald', sans-serif; /*Styling the Logo*/
-    text-transform: uppercase; 
+    font-family: 'Oswald', sans-serif;
+    /*Styling the Logo*/
+    text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 
+}
+
+#menu {
+    /* Styling the Nav Menu*/
+    font-size: 110%;
+    text-indent: 4px;
+    list-style-type: none;
+    /* Takes off Bullet points*/
+}
+
+#menu>li {
+    /* List items within the menu i.d*/
+    margin-bottom: 1em;
+    /* Spaces elements verticaly*/
+}
+
+.active {
+    /* Visual cue (Underline) on nav links-*/
+    border-bottom: 2px solid #ec0505; /*width/style/color*/
 }
 
 /* Main content*/
