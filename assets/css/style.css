@@ -75,7 +75,8 @@ h1 {
 
 .active {
     /* Visual cue (Underline) on nav links-*/
-    border-bottom: 2px solid #ec0505;
+        border-bottom: 1px solid #3a3a3a;
+     
     /*width/style/color*/
 }
 
@@ -156,4 +157,13 @@ footer {
         /* Push content down to accommodate larger header*/
         margin-top: 79px;
     }
+}
+
+/* Media query for hover tags - screen size of 992px and up*/
+@media screen and (min-width: 992px) {
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
+        
+    }
+
 }
