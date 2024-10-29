@@ -36,9 +36,9 @@ header {
     /* 1st- Horizontol offeset -*/
     /* = Left, 2nd Vertical offset - = Shading Above */
     /* 3rd intensity and 4th color */
-    display: flex; 
+    display: flex;
     justify-content: space-between;
-    align-items: baseline; 
+    align-items: baseline;
 
 }
 
@@ -46,7 +46,7 @@ header a {
     /*Any a tag that is descendant of header */
     text-decoration: none;
     color: inherit;
-  
+
 
 }
 
@@ -75,29 +75,35 @@ h1 {
 
 .active {
     /* Visual cue (Underline) on nav links-*/
-    border-bottom: 2px solid #ec0505; /*width/style/color*/
+    border-bottom: 2px solid #ec0505;
+    /*width/style/color*/
 }
+
 /* Navbar Styles with dropdown toggle*/
 
 nav {
-    position: absolute; /* Positioned relative to the nearest positioned ancestor*/
+    position: absolute;
+    /* Positioned relative to the nearest positioned ancestor*/
     background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
-    display: none; /* default Hidden until user clicked on*/
+    display: none;
+    /* default Hidden until user clicked on*/
     top: 100%;
-    
+
 
 }
+
 /* Nav Toggle*/
 #nav-toggle:checked~nav {
-    display:block;
+    display: block;
 }
 
 #nav-toggle {
-    display: none; /*Hides the checkbox*/
+    display: none;
+    /*Hides the checkbox*/
 }
 
 .nav-toggle-label {
@@ -109,11 +115,33 @@ main {
     background-color: aqua;
     /* main element to take up any surplus space to push footer down.*/
     flex: 1 0 auto;
-    margin-top:  47px;
+    margin-top: 47px;
 }
 
 /* Footer*/
 footer {
     background-color: red;
 
+}
+
+/*Media Query: tablets and larger (768px and up)*/
+@media screen and (min-width: 768px) {
+
+    /* Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu{
+        display: flex;
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
 }
