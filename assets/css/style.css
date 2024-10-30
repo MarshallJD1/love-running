@@ -212,6 +212,30 @@ hr {
 
 }
 
+#times {
+    background: url(../images/dublin-city.webp) no-repeat center / cover;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*This will not wrap on screens of less than 400px wide
+    each dive will expand to fill the available space on its row*/
+    flex-basis: 200px; /* Gives the divs base width of 200*/
+    flex-grow: 1; /* Expand to take up space*/
+    /*Create border around meet up time divs over background img*/
+    border: 2px solid white;
+}
+
+#times h3 {
+    /* Overirde the heading color set in general styles*/
+    color: #fafafa;
+}
+
 /*Media Query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
