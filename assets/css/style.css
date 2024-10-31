@@ -250,6 +250,16 @@ hr {
     color: #fafafa;
 }
 
+/**Media Query: Large or Landscape phones (576px and up)*/
+@media screen and (min-width: 576px) {
+    #photos {
+    column-count: 2;
+    column-gap: 0;
+
+}
+    
+}
+
 /*Media Query: tablets and larger (768px and up)*/
 @media screen and (min-width: 768px) {
 
@@ -311,7 +321,10 @@ hr {
         text-align: end;
         align-self: flex-end;
     }
-
+/* Gallery*/
+#photos{
+    column-count: 3;
+}
 
 }
 
@@ -321,9 +334,13 @@ hr {
         border-bottom: 1px solid #3a3a3a;
 
     }
+ /*Gallery*/
+    #photos{
+        column-count: 4;
+    }
 
 }
-
+/* Media query for above 1200px*/
 @media screen and (min-width: 1200px) {
     #benefits {
         display: flex;
